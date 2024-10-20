@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit task</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form single-task-form">
+      <h4 class="edit-title">Edit task</h4>
+      <div class="form-control">
+        <label class="form-label">task id</label>
+        <p class="task-edit-id">23424341623</p>
+      </div>
+      <div class="form-control">
+        <label for="" class="form-label">name</label>
+        <input
+          type="text"
+          name="name"
+          class="form-input taks-edit-name"
+          value="walk the dog"
+        />
+      </div>
+      <div class="form-control">
+        <label class="form-label">completed</label>
+        <input type="checkbox" name="completed" class="task-edit-completed" />
+      </div>
+      <button type="submit" class="btn btn-block task-edit-btn">edit</button>
+      <div class="form-alert text-small">there was an error</div>
+      <div class="text-sucess text-small">delete success</div>
+    </form>
+    <a href="index.html" class="btn back-link">back to tasks</a>
+  </body>
+</html>
